@@ -8,26 +8,26 @@ This document will provide a high-level solution, and will not include any code
 A solution is proposed to read movies data from disparate sources, select the most reliable title, genre, normalise the ratings, calculate the ratings using a proprietary algorithm, and expose the ratings as a web application.
 ## Requirements
 ### Functional
-FR-01: Source ratings from REST API
-FR-02: Source ratings from CSV via FTP server
-FR-03: Normalise movie ratings
-FR-04: Select the most reliable movie's title
-FR-05: Select the most reliable movie's genre
-FR-06: Calculate C-Rating using total ratings, and ratings by category
-FR-07: Expose C-Movie ratings as a web application accessible through an REST API.
+FR-01: Source ratings from REST API\
+FR-02: Source ratings from CSV via FTP server\
+FR-03: Normalise movie ratings\
+FR-04: Select the most reliable movie's title\
+FR-05: Select the most reliable movie's genre\
+FR-06: Calculate C-Rating using total ratings, and ratings by category\
+FR-07: Expose C-Movie ratings as a web application accessible through an REST API.\
 ### Non-functional
-NFR-01: Solution shall be DDD compliant.
-NFR-02: Solution design shall follow an agile mindset.
+NFR-01: Solution shall be DDD compliant.\
+NFR-02: Solution design shall follow an agile mindset.\
 ## Architecture Design
-Assumption-01: Movies Info is defined as the Domain (D)
-Assumption-02: C-Ratings is considered as a context within domain D
-C-Ratings is part of a root aggregate. A domain event triggers a request of a movie's info, including a movie's rating. 
+Assumption-01: Movies Info is defined as the Domain (D)\
+Assumption-02: C-Ratings is considered as a context within domain D\
+C-Ratings is part of a root aggregate. A domain event triggers a request of a movie's info, including a movie's rating.\
 ### High-level architecture diagram
 ### System components and their interactions
 ### Data flow diagram
 ### Technology stack
-Database server: NoSQL database
-Application server: web application
+Database server: NoSQL database\
+Application server: web application\
 ## Detailed Design
 ### Detailed design of each system component
 ### Class diagrams
