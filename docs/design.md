@@ -23,6 +23,7 @@ Assumption-01: Entertainment is defined as the Domain (D). Movies is a context (
 Assumption-02: C-Ratings is component of context C, within domain D. C-Ratings is part of movie's root aggregate.\ 
 At business level, within domain D, different business users (i.e. a customer, a employee browsing a web page) request information in context C, or a domain event triggered using an agent to refreshing content in context C (see figure 1).\
 At application level, different solutions building blocks extract, load, transform, calculate c-rating, and expose the component movies as a REST API (see figure 2).\
+
 ### System components and their interactions
 ### Data flow diagram
 ### Technology stack
