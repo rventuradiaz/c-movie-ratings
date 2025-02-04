@@ -19,15 +19,16 @@ FR-07: Expose C-Movie ratings as a web application accessible through an REST AP
 NFR-01: Solution shall be DDD compliant.\
 NFR-02: Solution design shall follow an agile mindset.\
 ## Architecture Design
-Assumption-01: Movies Info is defined as the Domain (D)\
-Assumption-02: C-Ratings is considered as a context within domain D\
-C-Ratings is part of a root aggregate. A domain event triggers a request of a movie's info, including a movie's rating.\
-### High-level architecture diagram
+Assumption-01: Entertainment is defined as the Domain (D). Movies is a context (C) withing D. A domain event triggers a request of a movie's info, including a movie's rating.\
+Assumption-02: C-Ratings is component of context C, within domain D. C-Ratings is part of movie's root aggregate.\ 
+At business level, within domain D, different business users (i.e. a customer, a employee browsing a web page) request information in context C, or a domain event triggered using an agent to refreshing content in context C (see figure 1).\
+At application level, different solutions building blocks extract, load, transform, calculate c-rating, and expose the component movies as a REST API (see figure 2).\
 ### System components and their interactions
 ### Data flow diagram
 ### Technology stack
 Database server: NoSQL database\
 Application server: web application\
+
 ## Detailed Design
 ### Detailed design of each system component
 ### Class diagrams
@@ -43,3 +44,7 @@ Application server: web application\
 ## Appendix
 ### Matrices
 ### Diagrams
+#### Figure 1. Bizz architecture diagram
+[<img src = "Bizz architecture.bmp">]
+#### Figure 2. App architecture diagram
+[<img src = "App architecture.bmp">]
