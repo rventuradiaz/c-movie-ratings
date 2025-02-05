@@ -15,6 +15,7 @@ FR-04: Select the most reliable movie's title\
 FR-05: Select the most reliable movie's genre\
 FR-06: Calculate C-Rating using total ratings, and ratings by category\
 FR-07: Expose C-Movie ratings as a web application accessible through an REST API.\
+A reference to requirements can be found at [Codebyte](coderbyte-project.pdf)
 
 ### Non-functional
 
